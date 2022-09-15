@@ -17,15 +17,15 @@ return new class extends Migration
             $table->id();
             $table->string('mark', 30);
             $table->string('model', 30);
-            $table->string('generation', 30);
+            $table->string('generation', 50);
             $table->integer('year');
             $table->integer('run');
             $table->string('color', 30);
-            $table->string('body-type', 30);
-            $table->string('engine-type', 30);
+            $table->string('body_type', 30);
+            $table->string('engine_type', 30);
             $table->string('transmission', 30);
-            $table->string('gear-type', 30);
-            $table->integer('generation_id');
+            $table->string('gear_type', 30);
+            $table->bigInteger('generation_id')->nullable();
         });
     }
 
